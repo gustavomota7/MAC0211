@@ -4,7 +4,7 @@ ESTRUTURA GERAL DAS INSTRUÇÕES
       nos saltos. Devem ser alfanuméricos começando por letras
     * mnemônico: especifica uma instrução (ex: MOV, ADD)
     * operando(s): objeto(s) sobre o(s) qual(is) a instrução opera.
-                   Quando umas intrução possui mais de um operando,
+                   Quando uma instrução possui mais de um operando,
                    eles devem ser separados por vírgula.
     * comentários: especialmente importantes, pois os programas são
                    pouco legíveis.
@@ -25,9 +25,9 @@ COMANDO PARA TRANSFERÊNCIA DE DADOS: MOV
                                      ; ou uma constante
 
     reg   - registrador
-    mem   - posiçaõ da memória (pode ser indicada por uma constante, 
+    mem   - posição da memória (pode ser indicada por uma constante, 
             como [1000], ou por meio de um registrador, como [EBX], 
-            que armazena a posiçaõ de memória no registrados)
+            que armazena a posição de memória no registrador)
     const - valor constante
 
     Exemplos:
@@ -45,7 +45,7 @@ COMANDO PARA TRANSFERÊNCIA DE DADOS: MOV
 
     Números normais são decimais. Com 'H' no final, hexadecimais.
     Os processadores mais novos também aceitam caracteres (entre aspas)
-    Ao mover entre registradores de tamanhos diferentes, temos de 
+    Ao mover entre registradores de tamanhos diferentes, temos que 
     usar alguns truques:
     
     Inicializamos o BL com um valor (BL <- 8)
@@ -66,7 +66,7 @@ MEMÓRIA COMO OPERANDO
         copia 2 paravras da memória (pois AX tem 16 bits).
 
     * Casos de ambiguidade no tamanho
-    Acontecem quando as intrução envolte um operando do tipo 'mem'
+    Acontecem quando a intrução envolve um operando do tipo 'mem'
     e outro do tipo 'const'. Exemplo:
     MOV [EBX], 5
     Usamos um tipo de conversor para garantir o tamanho:
@@ -88,7 +88,7 @@ MEMÓRIA COMO OPERANDO
     argumentos de entrada.
 
 COMANDO PARA TROCA DE DADOS: XCGH
-    Troca vaores dos operandos
+    Troca valores dos operandos
     XCGH reg, reg/mem
     XCGH mem, reg
 
