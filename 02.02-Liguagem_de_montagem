@@ -1,6 +1,6 @@
-LINGUEGEM DE MONTAGEM (Assembly)
+LINGUAGEM DE MONTAGEM (Assembly)
 
-Porque usar:
+Porquê usar:
 
 * Para aprender como uma dada CPU funciona;
 * Para ter o controle total do seu código;
@@ -9,7 +9,7 @@ Porque usar:
 * Para escrever um novo SO ou portar um já existente para 
   uma nova máquina (há partes do código que precisam ser 
   escritas em linguagem de montagem);
-* Para obter acesso a modos de programação não ussuais do seu 
+* Para obter acesso a modos de programação não usuais do seu 
   processador (ex: modo 16-bits, firmware, etc.);
 * Para otimizar manualmente códigos gerados por um compilador não
   muito bom;
